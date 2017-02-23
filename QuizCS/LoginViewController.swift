@@ -1,14 +1,7 @@
-//
-//  LoginViewController.swift
-//  FirebaseTutorial
-//
-//  Created by James Dacombe on 16/11/2016.
-//  Copyright © 2016 AppCoda. All rights reserved.
-//
-
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
 class LoginViewController: UIViewController {
 
@@ -16,9 +9,11 @@ class LoginViewController: UIViewController {
 //Outlets
 @IBOutlet weak var emailTextField: UITextField!
 @IBOutlet weak var passwordTextField: UITextField!
-
-
-    //Login Action
+    
+    var ref: FIRDatabaseReference!
+    
+    
+    //Login Action when button Log In is pressed
     @IBAction func loginAction(_ sender: AnyObject) {
         if self.emailTextField.text == "" || self.passwordTextField.text == "" {
             
@@ -33,16 +28,20 @@ class LoginViewController: UIViewController {
             
         } else {
             
+            // check whether email and password match the ones located in firebase
             FIRAuth.auth()?.signIn(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!) { (user, error) in
-                
+            
                 if error == nil {
-                    
-                    //Print into the console if successfully logged in
-                    print("You have successfully logged in")
-                    
                     //Go to the HomeViewController if the login is sucessful
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
-                    self.present(vc!, animated: true, completion: nil)
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                    vc.stringPassed = self.emailTextField.text! // pass email to the menu screen for welcome message
+                    
+                    self.present(vc, animated: true, completion: nil)
+                    
+                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main1", bundle:nil)
+                    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SecondVC") as! SecondVC
+                    nextViewController.email = self.emailTextField.text!
+                    nextViewController.password = self.passwordTextField.text!
                     
                 } else {
                     

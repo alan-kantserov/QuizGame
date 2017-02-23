@@ -1,22 +1,30 @@
-//
-//  HomeViewController.swift
-//  FirebaseTutorial
-//
-//  Created by James Dacombe on 16/11/2016.
-//  Copyright © 2016 AppCoda. All rights reserved.
-//
-
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
 
 class HomeViewController: UIViewController {
+    
+    @IBOutlet weak var User: UILabel!
+    
+    var stringPassed = String()
+    
+    
 
+    @IBAction func buttonPressed(sender: AnyObject) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main1", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        User.text = stringPassed
     }
 
     override func didReceiveMemoryWarning() {

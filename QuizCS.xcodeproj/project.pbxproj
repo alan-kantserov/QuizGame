@@ -7,21 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A17EB4985F2A64B94649ACE /* Pods_QuizCS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA827BC4A0F5E0B7CACB6416 /* Pods_QuizCS.framework */; };
 		BF62D23F1E5432DA005F0842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62D23E1E5432DA005F0842 /* AppDelegate.swift */; };
 		BF62D2411E5432DA005F0842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62D2401E5432DA005F0842 /* ViewController.swift */; };
-		BF62D2441E5432DA005F0842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF62D2421E5432DA005F0842 /* Main.storyboard */; };
 		BF62D2461E5432DA005F0842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF62D2451E5432DA005F0842 /* Assets.xcassets */; };
 		BF62D2491E5432DA005F0842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF62D2471E5432DA005F0842 /* LaunchScreen.storyboard */; };
+		BF62D2511E543399005F0842 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62D2501E543399005F0842 /* SecondVC.swift */; };
+		BF62D25C1E5435FD005F0842 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62D2551E5435FD005F0842 /* HomeViewController.swift */; };
+		BF62D25D1E5435FD005F0842 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62D2561E5435FD005F0842 /* LoginViewController.swift */; };
+		BF62D25E1E5435FD005F0842 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62D2571E5435FD005F0842 /* ResetPasswordViewController.swift */; };
+		BF62D25F1E5435FD005F0842 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62D2581E5435FD005F0842 /* SignUpViewController.swift */; };
+		BF62D26B1E54377C005F0842 /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = BF62D2661E54377C005F0842 /* Pods */; };
+		BF62D26C1E54377C005F0842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF62D2671E54377C005F0842 /* Assets.xcassets */; };
+		BF62D26D1E54377C005F0842 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = BF62D2681E54377C005F0842 /* Base.lproj */; };
+		BF62D2751E544750005F0842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF62D2741E544750005F0842 /* Main.storyboard */; };
+		BF62D2771E5448FA005F0842 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF62D2761E5448FA005F0842 /* GoogleService-Info.plist */; };
+		BF62D27A1E54543E005F0842 /* Main1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF62D2781E54543E005F0842 /* Main1.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17F86B48338C364422840E6F /* Pods-QuizCS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizCS.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuizCS/Pods-QuizCS.release.xcconfig"; sourceTree = "<group>"; };
+		5102946928F3C2512BFC25A1 /* Pods-QuizCS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizCS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuizCS/Pods-QuizCS.debug.xcconfig"; sourceTree = "<group>"; };
+		AA827BC4A0F5E0B7CACB6416 /* Pods_QuizCS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizCS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF62D23B1E5432DA005F0842 /* QuizCS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizCS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF62D23E1E5432DA005F0842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF62D2401E5432DA005F0842 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BF62D2431E5432DA005F0842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF62D2451E5432DA005F0842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF62D2481E5432DA005F0842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF62D24A1E5432DA005F0842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF62D2501E543399005F0842 /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		BF62D2551E5435FD005F0842 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BF62D2561E5435FD005F0842 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BF62D2571E5435FD005F0842 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		BF62D2581E5435FD005F0842 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BF62D2661E54377C005F0842 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
+		BF62D2671E54377C005F0842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF62D2681E54377C005F0842 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
+		BF62D2741E544750005F0842 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF62D2761E5448FA005F0842 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF62D2791E54543E005F0842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main1.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A17EB4985F2A64B94649ACE /* Pods_QuizCS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DA139FB8E13205564B56CC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5102946928F3C2512BFC25A1 /* Pods-QuizCS.debug.xcconfig */,
+				17F86B48338C364422840E6F /* Pods-QuizCS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BDD12A40B61FB6B753ADF712 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA827BC4A0F5E0B7CACB6416 /* Pods_QuizCS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF62D2321E5432DA005F0842 = {
 			isa = PBXGroup;
 			children = (
 				BF62D23D1E5432DA005F0842 /* QuizCS */,
 				BF62D23C1E5432DA005F0842 /* Products */,
+				6DA139FB8E13205564B56CC8 /* Pods */,
+				BDD12A40B61FB6B753ADF712 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,9 +98,19 @@
 		BF62D23D1E5432DA005F0842 /* QuizCS */ = {
 			isa = PBXGroup;
 			children = (
+				BF62D2661E54377C005F0842 /* Pods */,
+				BF62D2671E54377C005F0842 /* Assets.xcassets */,
+				BF62D2681E54377C005F0842 /* Base.lproj */,
+				BF62D2741E544750005F0842 /* Main.storyboard */,
+				BF62D2781E54543E005F0842 /* Main1.storyboard */,
+				BF62D2551E5435FD005F0842 /* HomeViewController.swift */,
+				BF62D2561E5435FD005F0842 /* LoginViewController.swift */,
+				BF62D2571E5435FD005F0842 /* ResetPasswordViewController.swift */,
+				BF62D2761E5448FA005F0842 /* GoogleService-Info.plist */,
+				BF62D2581E5435FD005F0842 /* SignUpViewController.swift */,
+				BF62D2501E543399005F0842 /* SecondVC.swift */,
 				BF62D23E1E5432DA005F0842 /* AppDelegate.swift */,
 				BF62D2401E5432DA005F0842 /* ViewController.swift */,
-				BF62D2421E5432DA005F0842 /* Main.storyboard */,
 				BF62D2451E5432DA005F0842 /* Assets.xcassets */,
 				BF62D2471E5432DA005F0842 /* LaunchScreen.storyboard */,
 				BF62D24A1E5432DA005F0842 /* Info.plist */,
@@ -71,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF62D24D1E5432DA005F0842 /* Build configuration list for PBXNativeTarget "QuizCS" */;
 			buildPhases = (
+				DAB44B88B263E23CEABA70B3 /* [CP] Check Pods Manifest.lock */,
 				BF62D2371E5432DA005F0842 /* Sources */,
 				BF62D2381E5432DA005F0842 /* Frameworks */,
 				BF62D2391E5432DA005F0842 /* Resources */,
+				CD873D2B8F2E16DAE78942E8 /* [CP] Embed Pods Frameworks */,
+				C79D67319E2E25ED0A9CECEF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,41 +180,99 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF62D2751E544750005F0842 /* Main.storyboard in Resources */,
 				BF62D2491E5432DA005F0842 /* LaunchScreen.storyboard in Resources */,
+				BF62D26D1E54377C005F0842 /* Base.lproj in Resources */,
+				BF62D26B1E54377C005F0842 /* Pods in Resources */,
 				BF62D2461E5432DA005F0842 /* Assets.xcassets in Resources */,
-				BF62D2441E5432DA005F0842 /* Main.storyboard in Resources */,
+				BF62D27A1E54543E005F0842 /* Main1.storyboard in Resources */,
+				BF62D26C1E54377C005F0842 /* Assets.xcassets in Resources */,
+				BF62D2771E5448FA005F0842 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C79D67319E2E25ED0A9CECEF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuizCS/Pods-QuizCS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD873D2B8F2E16DAE78942E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuizCS/Pods-QuizCS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAB44B88B263E23CEABA70B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF62D2371E5432DA005F0842 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF62D25D1E5435FD005F0842 /* LoginViewController.swift in Sources */,
+				BF62D25C1E5435FD005F0842 /* HomeViewController.swift in Sources */,
+				BF62D25F1E5435FD005F0842 /* SignUpViewController.swift in Sources */,
 				BF62D2411E5432DA005F0842 /* ViewController.swift in Sources */,
+				BF62D2511E543399005F0842 /* SecondVC.swift in Sources */,
 				BF62D23F1E5432DA005F0842 /* AppDelegate.swift in Sources */,
+				BF62D25E1E5435FD005F0842 /* ResetPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BF62D2421E5432DA005F0842 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BF62D2431E5432DA005F0842 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BF62D2471E5432DA005F0842 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BF62D2481E5432DA005F0842 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BF62D2781E54543E005F0842 /* Main1.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF62D2791E54543E005F0842 /* Base */,
+			);
+			name = Main1.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -256,6 +371,7 @@
 		};
 		BF62D24E1E5432DA005F0842 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5102946928F3C2512BFC25A1 /* Pods-QuizCS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuizCS/Info.plist;
@@ -268,6 +384,7 @@
 		};
 		BF62D24F1E5432DA005F0842 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F86B48338C364422840E6F /* Pods-QuizCS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuizCS/Info.plist;
@@ -297,6 +414,7 @@
 				BF62D24F1E5432DA005F0842 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

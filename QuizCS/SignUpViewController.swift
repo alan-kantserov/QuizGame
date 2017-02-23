@@ -1,14 +1,7 @@
-//
-//  SignUpViewController.swift
-//  FirebaseTutorial
-//
-//  Created by James Dacombe on 16/11/2016.
-//  Copyright © 2016 AppCoda. All rights reserved.
-//
-
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
 
@@ -16,7 +9,14 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    //Sign Up Action for email
+    var ref: FIRDatabaseReference!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        ref = FIRDatabase.database().reference()
+    }
+    
+    //Sign Up Action for email    
     @IBAction func createAccountAction(_ sender: AnyObject) {
         if emailTextField.text == "" {
             let alertController = UIAlertController(title: "Error", message: "Please enter your email and password", preferredStyle: .alert)
@@ -33,9 +33,25 @@ class SignUpViewController: UIViewController {
                     print("You have successfully signed up")
                     //Goes to the Setup page which lets the user take a photo for their profile picture and also chose a username
                     
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
-                    self.present(vc!, animated: true, completion: nil)
+                    let userID: String = user!.uid
+                    let userEmail: String = self.emailTextField.text!
+                    let userPassword: String = self.passwordTextField.text!
+                    let userScore = 0
                     
+                    self.ref.child("Users").child(userID).setValue(["Email": userEmail, "Password": userPassword, "Score": userScore])
+                    
+                    print("Registered " + user!.uid)
+                    
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                    vc.stringPassed = self.emailTextField.text!
+                    self.present(vc, animated: true, completion: nil)
+                    
+                    
+                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main1", bundle:nil)
+                    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SecondVC") as! SecondVC
+                    
+                    nextViewController.uid = userID
+                    nextViewController.score = userScore
                 } else {
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     
